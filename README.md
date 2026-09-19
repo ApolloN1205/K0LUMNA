@@ -1,4 +1,4 @@
-# K0LUMNA V0.0.1
+# K0LUMNA V0.0.2
 A Simulated SOC analysis platform &amp; incident response training simulator
 
 ### **K0LUMNA** (K-0)
@@ -8,5 +8,6 @@ Designed to be the backbone of SOC training.
 
 Current Feautures:
 The Spinal Cord - contains various labs containing realistic scenarios, in which the user must identify any issues, and form a report which will be assessed.
+Core Training - Various Cyber Security Focused excercises
 
 # **! WIP !**
