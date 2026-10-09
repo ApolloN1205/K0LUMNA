@@ -34,24 +34,25 @@ while True:
                         case _:
                             print('Invalid selection. Please try again.') #applies to everything invalid
                             continue
-    Selection = int(input('Please select an option: '))
-    if Selection == 1:
-            CoreTraining = ['Core-001','Core-002','Core-003'] #Array containing the core training modules
-            SubMenuPrint('Core Training')
-            SubMenu(CoreTraining)
-            break
-    elif Selection == 2: #The spinal cord, containing test labsVertebrae
-            Vertebrae = ['Vertebra-001','Vertebra-002','Vertebra-003'] #Array containing the vertebrae (labs) for investigation)
-            SubMenuPrint('The SOC Investigation')
-            SubMenu(Vertebrae)
-            break #Calls the SubMenu function with the Vertebrae array as input
-    elif Selection == 3: #Progress Report(s)
-            UserProfile = ['','',''] #Array containing the user profile information
-            SubMenuPrint('Progress Report(s)')
-            SubMenu(UserProfile)
-            break #Calls the SubMenu function with the UserProfile array as input
-    elif Selection == 4: #Exit
-            print('You have chosen to exit.')
-            break
-    else:
-            print('Invalid selection. Please try again.')
+    Selection = int(input('Please select an option from the menu:'))
+    match Selection:
+          case 1:
+                CoreTraining = ['Core-001','Core-002','Core-003'] #Array containing the core training modules
+                SubMenuPrint('Core Training')
+                SubMenu(CoreTraining)
+                break
+          case 2: #The spinal cord, containing test labsVertebrae
+                Vertebrae = ['Vertebra-001','Vertebra-002','Vertebra-003'] #Array containing the vertebrae (labs) for investigation)
+                SubMenuPrint('The SOC Investigation')
+                SubMenu(Vertebrae)
+                break #Calls the SubMenu function with the Vertebrae array as input
+          case 3: #Progress Report(s)
+                UserProfile = ['','',''] #Array containing the user profile information
+                SubMenuPrint('Progress Report(s)')
+                SubMenu(UserProfile)
+                break #Calls the SubMenu function with the UserProfile array as input
+          case 4: #Exit
+                print('You have chosen to exit.')
+                break
+          case _:
+                print('Invalid selection. Please try again.') #applies to everything invalid
