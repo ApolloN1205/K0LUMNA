@@ -1,0 +1,3 @@
+Coretraining = ['Core-001','Core-002','Core-003'] #Array containing the core training modules
+Vertebrae = ['Vertebra-001','Vertebra-002','Vertebra-003'] #Array containing the vertebrae (labs) for investigation)
+UserProfile = ['','',''] #Array containing the user profile information
