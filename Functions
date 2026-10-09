@@ -20,19 +20,3 @@ def SubMenu(array): #uses array input
                     case _:
                       print('Invalid selection. Please try again.') #applies to everything invalid
                       continue
-
-def SubMenu(array): #uses array input
-    for i in range (len(array)):
-        print(array[i])
-        while True:
-            Selection = int(input('Please select a Lab to investigate: ')) #takes input for level
-            match Selection:
-                    case Selection if Selection >= 1 and Selection <= len(array):
-                        print('You have selected ' + array[Selection - 1] + '.')
-                        return Selection
-                    case 0:
-                        print('You have chosen to exit.') #exits
-                        return 0
-                    case _:
-                      print('Invalid selection. Please try again.') #applies to everything invalid
-                      continue
